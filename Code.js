@@ -1,3 +1,11 @@
+/*
+Primary function for generating loss values by taking the following steps.
+1. Use ScriptProperties to find the most recently reviewed row (rowCursor) and Sheet (sheetCursor).
+2. Checks to see if new rows have been added to the current sheet.  If so, process them and increment rowCursor.
+3. If no new rows to add, check for new rows in the following Sheet.  If the new sheet has new rows, process rows and increment sheetCursor.
+4. Continue until all rows are processed. Set rowCursor and sheetCursor to new values in ScriptProperties.
+5. Log all losses to the active spreadsheet.
+*/
 function lossSummary() {
   // Spreadsheet ID for Profit Margin (PM) Spreadsheet.
   // Actual ID removed.
