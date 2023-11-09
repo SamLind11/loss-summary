@@ -1,6 +1,7 @@
 function lossSummary() {
   // Spreadsheet ID for Profit Margin (PM) Spreadsheet.
-  let ss_id = '1lRK-UO91qipuxeDFX7m2mlFqrKvpHQytI2FMnYEk2iU';
+  // Actual ID removed.
+  let ss_id = '***';
 
   // Spreadsheet object for PM.
   let spreadsheet = SpreadsheetApp.openById(ss_id);
